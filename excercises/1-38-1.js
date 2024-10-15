@@ -1,10 +1,4 @@
-"use strict";
-
-var number;
-number = 10;
-number = 12;
-console.log(number);
-
+"use ctrict"
 var customid = "4499"
 console.log(customid)
 

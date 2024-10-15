@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Greetings</title>
+  </head>
+  <body>
+    <main>
+      <div id="messageDiv"></div>
+
+      <input id="nameInput" type text value="Wray" />
+      <button onclick="printMessage()">Ice Code</button>
+    </main>
+    <script>
+      "use strict";
+      var message = "M1";
+      let messageDiv = document.getElementById("messageDiv");
+      console.log(messageDiv);
+
+      messageDiv.innerText = message;
+      function printMessage() {
+        messageDiv.innerText = "Hi CodeBlooded";
+      }
+    </script>
+  </body>
+</html>

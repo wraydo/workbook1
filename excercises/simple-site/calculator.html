@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+  </head>
+  <body>
+    <main>
+      <label for=" number1">Number 1</label>
+      <input id="number1Input" type="number" />
+      <label for="number2Input">Number 2</label>
+      <input id="number2Input" type="number" />
+      <button onclick="add()">Add</button>
+      <button onclick="subtract()">Subtract</button>
+      <button onclick="multiply()">Multiply</button>
+      <button onclick="divide()">Divide</button>
+      <label for="answerInput">Answer</label>
+      <input readonly id="answerInput type= "text" />
+    </main>
+    <script>
+      let number1Input = document.getElementById("number1Input");
+      let number2Imput = document.getElementById("number2Input");
+
+      function add() {
+        var number1 = Number(number1Input.value);
+        var number2 = Number(number2Input.value);
+        var sum = number1 + number2;
+      }
+    </script>
+  </body>
+</html>
