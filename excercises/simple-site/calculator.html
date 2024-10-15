@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <label for=" number1">Number 1</label>
+      <label for="number1Input">Number 1</label>
       <input id="number1Input" type="number" />
       <label for="number2Input">Number 2</label>
       <input id="number2Input" type="number" />
@@ -17,17 +17,45 @@
       <button onclick="multiply()">Multiply</button>
       <button onclick="divide()">Divide</button>
       <label for="answerInput">Answer</label>
-      <input readonly id="answerInput type= "text" />
+      <input readonly id="answerInput" type="text" />
     </main>
     <script>
       let number1Input = document.getElementById("number1Input");
-      let number2Imput = document.getElementById("number2Input");
+      let number2Input = document.getElementById("number2Input");
+      let answerInput = document.getElementById("answerInput");
 
       function add() {
         var number1 = Number(number1Input.value);
         var number2 = Number(number2Input.value);
         var sum = number1 + number2;
+        answerInput.value = sum;
+        console.log(sum);
       }
+
+      function subtract() {
+        var number1 = Number(number1Input.value);
+        var number2 = Number(number2Input.value);
+        var subtract = number1 - number2;
+        answerInput.value = subtract;
+        console.log(subtract);
+      }
+
+      function multiply() {
+        var number1 = Number(number1Input.value);
+        var number2 = Number(number2Input.value);
+        var multiply = number1 * number2;
+        answerInput.value = multiply;
+        console.log(multiply);
+      }
+
+      function divide() {
+        var number1 = Number(number1Input.value);
+        var number2 = Number(number2Input.value);
+        var divide = number1 / number2;
+        answerInput.value = divide;
+        console.log(divide);
+      }
+
     </script>
   </body>
 </html>
