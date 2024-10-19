@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Document</title>
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <!-- <link rel="stylesheet" href="css/pico.min.css" /> -->
+    <main>
+      <h1>Food Mania Rez</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum labore similique veniam optio minima dolores
+        magni autem vitae inventore alias, nihil ea cupiditate quis sunt earum, ab harum non in!
+      </p>
+      <form>
+        <!-- text -->
+        <label for="firstNameInput">First Name</label>
+        <input type="text" id="firstNameInput" placeholder="enter first name" value="Wray" />
+
+        <!-- checkbox -->
+        <input type="checkbox" id="isActiveCheckbox" checked />
+        <label for="isActiveCheckbox">Is Active?</label>
+        <!-- <br> -->
+        <fieldset>
+          <legend>What's Your Restauraunt!!</legend>
+          <input type="radio" name="restaurauntVsRestaurant" id="restaurauntCheckbox" checked />
+          <label for="isActiveCheckbox">Red Lobster</label>
+
+          <input type="radio" name="restaurauntVsRestaurant" id="rCheckbox" checked />
+          <label for="isActiveCheckbox">Olive Garden</label>
+
+          <input type="radio" name="restaurauntVsRestaurant" id="RCheckbox" checked />
+          <label for="isActiveCheckbox">Outback</label>
+
+          <input type="radio" name="restaurauntVsRestaurant" id="rRCheckbox" checked />
+          <label for="isActiveCheckbox">BeniHana's</label>
+        </fieldset>
+        <!-- radiobutton group -->
+        <hr />
+        <fieldset>
+          <legend>21 N Over?</legend>
+          <input type="radio" name="over21Radio" id="over21RadioYes" />
+          <label for="over21RadioYes">Yes</label>
+          <input type="radio" name="over21Radio" id="over21RadioNo" />
+          <label for="over21RadioNo">No</label>
+        </fieldset>
+        <input type="date" name="dates" id="date" />
+        <button onclick="Seat">Reserve Seat</button>
+      </form>
+    </main>
+    <script src="scripts/main.js"></script>
+
+    <!-- // "use strict"
+        // console.log("ready");
+         -->
+  </body>
+</html>
